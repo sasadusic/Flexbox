@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: aileron;
+}
+h1{
+    font-weight: 500;
+    margin: 60px 0 30px 0;
+}
+p{
+    margin-bottom: 50px;
+}
+.header{
+    text-align: center;
+    padding: 30px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.column{
+    flex: 20%;
+}
+.column img{
+    padding: 3.5px;
+    width: 100%;
+    vertical-align: middle;
+}
+img{
+    transition: .6s ease;
+}
+img:hover{
+    transform: scale(1.4);
+}
+@media (max-width: 800px) {
+    .column{
+        flex: 50%;
+    }
+}
+@media (max-width: 600px) {
+    .column{
+        flex: 100%;
+    }
+}
